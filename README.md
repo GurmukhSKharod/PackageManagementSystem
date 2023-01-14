@@ -9,3 +9,5 @@ All packages are stored both locally via json, and on a web server. The backend 
 
 
 Lastly, this application was created in four separate iterations, where each new iteration builds upon all existing features of the previous iterations, such as improvements to user interfaces or additional entry fields.  
+
+Note that when running the application: You must first run the web server, then secondly run the GUI front end separately to allow all new additions to be added to the server. 
