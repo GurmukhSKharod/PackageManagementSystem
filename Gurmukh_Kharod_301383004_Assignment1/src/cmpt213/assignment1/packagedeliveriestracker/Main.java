@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 /**
  * Main.java
- * Gurmukh Kharod
+ * Gurmukh Kharod.
  * 301 383 004
  *
  * This is the driver class for this program,
