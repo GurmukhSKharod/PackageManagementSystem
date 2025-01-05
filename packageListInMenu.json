@@ -1,0 +1,62 @@
+[
+  {
+    "type": "Book",
+    "name": "book test name 1",
+    "notes": "book test notes 1",
+    "priceInDollar": 1111.0,
+    "weightInKg": 1111.0,
+    "delivered": false,
+    "expectedDeliveryDate": "2025-01-04T22:35:41.062387900",
+    "authorName": "author test 1"
+  },
+  {
+    "type": "Book",
+    "name": "book test name 1",
+    "notes": "book test notes 1",
+    "priceInDollar": 1111.0,
+    "weightInKg": 1111.0,
+    "delivered": false,
+    "expectedDeliveryDate": "2025-01-04T23:35:09.070822900",
+    "authorName": "author test 1"
+  },
+  {
+    "type": "Electronic",
+    "name": "e test name 1",
+    "notes": "e test notes 1",
+    "priceInDollar": 333.33,
+    "weightInKg": 333.0,
+    "delivered": false,
+    "expectedDeliveryDate": "2025-01-05T05:35:41.062387900",
+    "environmentalHandlingFee": 3333.33
+  },
+  {
+    "type": "Electronic",
+    "name": "e test name 1",
+    "notes": "e test notes 1",
+    "priceInDollar": 333.33,
+    "weightInKg": 333.0,
+    "delivered": false,
+    "expectedDeliveryDate": "2025-01-05T06:35:09.070822900",
+    "environmentalHandlingFee": 3333.33
+  },
+  {
+    "type": "Perishable",
+    "name": "p test name 1",
+    "notes": "p test notes 1",
+    "priceInDollar": 222.22,
+    "weightInKg": 222.0,
+    "delivered": false,
+    "expectedDeliveryDate": "2025-01-05T10:35:41.062387900",
+    "expiryDate": "2025-01-04T22:35:41.062387900"
+  },
+  {
+    "type": "Perishable",
+    "name": "p test name 1",
+    "notes": "p test notes 1",
+    "priceInDollar": 222.22,
+    "weightInKg": 222.0,
+    "delivered": false,
+    "expectedDeliveryDate": "2025-01-05T11:35:09.070822900",
+    "expiryDate": "2025-01-04T23:35:09.070822900"
+  }
+]

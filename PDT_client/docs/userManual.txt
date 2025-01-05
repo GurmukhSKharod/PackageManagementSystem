@@ -1,0 +1,58 @@
+Welcome to the user manual for Gurmukh's Package Delivery App.
+
+We will go over the User Interface and the several options that are offered for working with packages.
+
+When starting the app, the main panel will be shown.
+This main panel contains a title, three buttons for listing packages based on a condition,
+the JScrollPane for the list, and an add package button on the bottom.
+
+1.
+Listing packages can be done by clicking "All" button.
+
+2.
+-To add a package, click "Add new package" at the bottom.
+-a message will show up with the data entry rules
+-The user entry for a new package frame will open, separate from the main frame.
+Start by choosing a package type: eg. Book
+-Then enter in the necessary fields for a book.
+-Note that "notes", "expiry date", and "environmental handling fee" will all not be necessary for a Book package.
+-The add package section shows text entry fields for all possible options, but the user does not need to enter
+in the fields if they are not neccessary based on the package type.
+-If for example, the user enters expiry date for a book, the app will not crash.
+-Instead the app will simply ignore that piece of user input and create a book object,
+assuming all required other fields are entered.
+-Let's assume we do not enter in a value for a field,
+then when clicking create, a JOptionPane error message will be given to the user.
+-The date picker was not implemented.
+the user must enter the date in the correct format: yyyy-mm-dd hh:mm    eg. 2000-12-12 12:30
+-Finally the user can click "create" or "cancel"
+
+3.
+-To remove a package, click the corresponding remove button shown for each package.
+-a remove button will only be shown on the package list,
+so if there are no packages, there is no way to remove one, which is expected.
+
+4.
+-To list overdue packages, simply click "Overdue" button
+
+5.
+-To list upcoming packages, simply click "Upcoming" button
+
+6.
+-to mark packages as delivered click the checkbox where delivered is located.
+-this delivered check box is specific to each package
+-if there are no packages, the list will be empty,
+and we can't set any packages to delivered, which is expected
+
+7.
+-finally, when clicking the "x" to close the frame,
+the app will exit, and all packages will be added to the json file.
+
+
+The main code that was added to the program was in PackageMenuGUI.java and PackageDeliveriesTrackerControl.java.
+Please refer to these classes for the Assignment 3 implementation.
+
+
+Thank you,
+Gurmukh Kharod
+301383004

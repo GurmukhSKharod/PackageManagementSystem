@@ -1,0 +1,103 @@
+curlCommands.txt
+Gurmukh Kharod
+301 383 004
+
+
+Welcome to the curl commands text file for the Package Delivery Tracker.
+Here we can use the following commands to perform one of the main operations.
+Additionally, an example of each curl command is also shown, for testing purposes in the terminal,
+in the case that we are referring to a POST curl command.
+
+
+1. To ping the server:
+curl -X GET localhost:8080/ping
+
+
+2. To list all packages in the server:
+curl -X GET localhost:8080/listAll
+
+
+3. To add a new package: (3 separate curl post commands)
+
+
+a) add book:
+curl -H "Content-Type: application/json" -X POST -d
+'{ Book JSON Object }' localhost:8080/addBook
+
+ex:
+curl -H "Content-Type: application/json" -X POST -d
+'{ "name": "b1", "notes": "111", "priceInDollar": 1111.0,
+"weightInKg": 11111.0, "delivered": false,
+"expectedDeliveryDate": "1111-11-11T11:11", "authorName": "a100000" }' localhost:8080/addBook
+
+
+b) add perishable:
+curl -H "Content-Type: application/json" -X POST -d
+'{ Perishable JSON Object }' localhost:8080/addPerishable
+
+ex:
+curl -H "Content-Type: application/json" -X POST -d
+'{ "name": "p1", "notes": "111", "priceInDollar": 1111.0,
+"weightInKg": 11111.0, "delivered": false,
+"expectedDeliveryDate": "1111-11-11T11:11", "expiryDate": "2222-11-11T11:11" }' localhost:8080/addPerishable
+
+
+c) add electronic:
+curl -H "Content-Type: application/json" -X POST -d
+'{ Electronic JSON Object }' localhost:8080/addElectronic
+
+curl -H "Content-Type: application/json" -X POST -d
+'{ "name": "e1", "notes": "111", "priceInDollar": 1111.0,
+"weightInKg": 11111.0, "delivered": false,
+"expectedDeliveryDate": "1111-11-11T11:11", "environmentalHandlingFee" : 3333.33 }' localhost:8080/addElectronic
+
+
+4. To remove a package:
+curl -H "Content-Type: application/json" -X POST http://localhost:8080/removePackage/{index to remove}
+
+ex:
+curl -H "Content-Type: application/json" -X POST http://localhost:8080/removePackage/0
+(removes the first package in the array list - index 0)
+
+
+5. List Overdue Packages:
+curl -X GET localhost:8080/listOverduePackage
+
+
+6. List Upcoming Packages:
+curl -X GET localhost:8080/listUpcomingPackage
+
+
+7. mark Package As Delivered:
+curl -H "Content-Type: application/json" -X POST http://localhost:8080/markPackageAsDelivered/{index}
+
+ex:
+curl -H "Content-Type: application/json" -X POST http://localhost:8080/markPackageAsDelivered/0
+(sets 0 array index to delivered - index 0)
+
+
+8. exit program:
+curl -X GET localhost:8080/exit
+
+
+Additional command to add sample packages for testing purposes:
+curl -X GET localhost:8080/addSamplePackages
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
